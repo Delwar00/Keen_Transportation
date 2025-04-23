@@ -28,5 +28,8 @@ add_action('after_setup_theme','keen_theme_support');
 
 
 //scripts added
-
 include_once('inc/common/scripts.php');
+if ( class_exists( 'Kirki' ) ) {
+    include_once('inc/keen-kirki.php');
+}
+include_once('inc/template-functions.php');
