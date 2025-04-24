@@ -72,16 +72,16 @@
                                 <ul class="list-style-none right-btn d-flex align-items-center">
                                     <li>
                                         <div class="search-area">
-                                            <a class="search-btn" href="#"><img src="assets/img/icon/search.svg" alt="icon-not-found"></a>
+                                            <a class="search-btn" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/search.svg" alt="icon-not-found"></a>
                                             <div class="input-group">
                                                 <input type="text" placeholder="Search here.....">
-                                                <span class="input-group-text"><img src="assets/img/icon/search.svg" alt="icon-not-found"></span>
+                                                <span class="input-group-text"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/search.svg" alt="icon-not-found"></span>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <a class="theme_btn theme_btn_border d-none d-xl-inline-block" href="get-quote.html">
-                                            <img class="mr-10" src="assets/img/icon/megaphone.svg" alt="icon-not-found">
+                                            <img class="mr-10" src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/megaphone.svg" alt="icon-not-found">
                                             <span>GET A QUOTE</span>
                                         </a>
                                     </li>

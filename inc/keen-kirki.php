@@ -38,3 +38,38 @@ function keen_header_info(){
     );
 }
 Keen_header_info();
+
+
+//footer panel
+new \Kirki\Panel(
+	'keen_panel_footer',
+	[
+		'priority'    => 10,
+		'title'       => esc_html__( 'Keen Footer Option', 'Keen' ),
+		'description' => esc_html__( 'My Panel Description.', 'Keen' ),
+	]
+);
+
+// footer info section 
+function keen_footer_info(){
+    new \Kirki\Section(
+        'keen_footer_info',
+        [
+            'title'       => esc_html__( 'Footer info', 'Keen' ),
+            'description' => esc_html__( 'My Section Description.', 'Keen' ),
+            'panel'       => 'keen_panel_footer',
+            'priority'    => 160,
+        ]
+    );
+
+    new \Kirki\Field\Textarea(
+        [
+            'settings' => 'keen_footer_setting',
+            'label'    => esc_html__( 'Footer Privacy Policy', 'Keen' ),
+            'section'  => 'keen_footer_info',
+            'default'  => esc_html__( '© Themazine Copyright 2021 All Right Reserved', 'Keen' ),
+            'priority' => 10,
+        ]
+    );
+}
+keen_footer_info();

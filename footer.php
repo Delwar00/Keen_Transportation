@@ -1,16 +1,16 @@
  <!--footer-area start-->
  <footer class="footer-area sky-blue-bg-soft pos-rel pt-130 pt-md-100 pt-xs-100 fix">
-        <img class="fot-shape f-shape1 d-none d-xxl-inline-block" src="assets/img/line/line-5.svg" alt="Line Shape">
-        <img class="fot-shape f-shape2" src="assets/img/shape/dot-shape-1.svg" alt="Dot Shape">
-        <img class="fot-shape f-shape3 d-none d-xl-inline-block" src="assets/img/shape/round-line-black-1.svg" alt="Dot Shape">
-        <img class="fot-shape f-shape4" src="assets/img/shape/orange-4.svg" alt="Dot Shape">
+        <img class="fot-shape f-shape1 d-none d-xxl-inline-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/line/line-5.svg" alt="Line Shape">
+        <img class="fot-shape f-shape2" src="<?php echo get_template_directory_uri(); ?>/assets/img/shape/dot-shape-1.svg" alt="Dot Shape">
+        <img class="fot-shape f-shape3 d-none d-xl-inline-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/shape/round-line-black-1.svg" alt="Dot Shape">
+        <img class="fot-shape f-shape4" src="<?php echo get_template_directory_uri(); ?>/assets/img/shape/orange-4.svg" alt="Dot Shape">
         <div class="container">
             <div class="row borders-grey pb-30">
                     <div class="col-xl-3 col-lg-4 col-md-6  wow fadeInUp2 animated" data-wow-delay='.1s'>
                         <div class="footer__widget mb-30">
                             <div class="footer-log">
                                 <a href="index.html" class="logo">
-                                    <img src="assets/img/logo/header_logo_one.svg" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/header_logo_one.svg" alt="">
                                 </a>
                             </div>
                             <div class="social-links footer__social mb-25">
@@ -48,12 +48,12 @@
                     </div>
                     <div class="col-xl-3 col-lg-6 col-md-6  wow fadeInUp2 animated" data-wow-delay='.7s'>
                         <div class="footer__widget mb-30">
-                            <h4 class="widget-title mb-30">Addresss</h4>
+                            <h4 class="widget-title mb-30">Main Address</h4>
                             <span class="addres-details mb-25">Subscribe our newsletter to get the latest news & updates.</span>
                             <div class="foter-subscribe">
                                 <form class="subscribe-form mb-1" action="form.php">
                                     <input class="mb-15" type="text" placeholder="Email address">
-                                    <button class="fot_sub_btn"><img src="assets/img/icon/right-arrow.svg" alt="Right Arrow"></button>
+                                    <button class="fot_sub_btn"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/right-arrow.svg" alt="Right Arrow"></button>
                                 </form>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -70,7 +70,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-7">
                         <div class="copyright mb-45 text-start text-md-start">
-                            <p>© <a href="index.html">Themazine</a> Copyright 2021 All Right Reserved</p>
+                            <p><?php footer_copyright(); ?></p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-5 text-md-end">

@@ -25,8 +25,6 @@ function keen_theme_support(){
 
 add_action('after_setup_theme','keen_theme_support');
 
-
-
 //scripts added
 include_once('inc/common/scripts.php');
 if ( class_exists( 'Kirki' ) ) {
